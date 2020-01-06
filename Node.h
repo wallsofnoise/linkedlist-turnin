@@ -2,6 +2,7 @@
 #ifndef NODE_H
 #define NODE_H
 #include <iostream>
+#include "Student.h"
 
 using namespace std;
 
@@ -17,7 +18,7 @@ class Node { // main class code
   void setNext(Node*); // set the next pointer to the corresponding node pointer
  private:
   // variables
-  
+  Student* student;
   Node* next;
 };
 #endif
