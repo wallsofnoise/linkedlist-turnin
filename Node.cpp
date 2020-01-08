@@ -1,12 +1,14 @@
 #include "Node.h" // include node header
 #include "Student.h" // allow access to student class
 
+using namespace std;
+
 Node::Node(Student* newstudent) { // constructor
   student = newstudent;
 }
 
 Node::~Node() { // destructor
-  delete &student;
+  delete student;
   next = NULL;
 }
 
